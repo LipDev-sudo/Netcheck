@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+build/
+dist/
+*.egg-info/
+
+# Testes e cobertura
+.coverage
+htmlcov/
+.ruff_cache/
+
+# Relatórios gerados pelo NetCheck
+reports/
+
+# Configurações e segredos
+.env
