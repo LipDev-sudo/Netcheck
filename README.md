@@ -58,6 +58,22 @@ python3 -m unittest discover -s tests -v
 
 Os testes usam simulações (mocks) e não dependem de acesso à rede. O workflow em `.github/workflows/tests.yml` os executa a cada push e pull request na `main`.
 
+## Estrutura do projeto
+
+```text
+netcheck/
+├── netcheck.py
+├── tests/
+│   └── test_netcheck.py
+└── reports/
+```
+
+A pasta `reports/` é criada para armazenar os relatórios gerados durante os diagnósticos.
+
+## Objetivo
+
+Projeto de estudo voltado para diagnóstico de redes, automação de tarefas e testes automatizados, aplicando conceitos úteis para suporte técnico e infraestrutura de TI.
+
 ## Limitações
 
 Testa uma porta TCP por execução e não executa ping ICMP, traceroute nem varredura de portas.
